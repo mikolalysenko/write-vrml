@@ -1,0 +1,28 @@
+{
+  "name": "write-vrml",
+  "version": "0.0.0",
+  "description": "Serializes a mesh to a VRML file",
+  "main": "write-vrml.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mikolalysenko/write-vrml.git"
+  },
+  "keywords": [
+    "vrml",
+    "mesh",
+    "3d",
+    "geometry",
+    "serialize"
+  ],
+  "author": "Mikola Lysenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikolalysenko/write-vrml/issues"
+  }
+}
