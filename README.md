@@ -12,7 +12,7 @@ A limited VRML serialization module.  This should be sufficient to export static
 var writeVRML = require("write-vrml")
 
 writeVRML({
-  cells: [0, 1, 2],
+  cells: [ [0, 1, 2] ],
   positions: [ [0, 0, 0], [1, 0, 0], [0, 1, 0] ]
 }).pipe(process.stdout)
 ```

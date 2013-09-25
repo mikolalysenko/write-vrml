@@ -38,7 +38,7 @@ function VRMLStream(cells, positions, vUVs, fUVs, vColors, fColors, textureURL) 
   this.textureURL = textureURL
 }
 
-util.inherits(stream.Readable)
+util.inherits(VRMLStream, stream.Readable)
 
 VRMLStream.prototype._read = function(sz) {
   switch(this.state) {
@@ -187,7 +187,7 @@ VRMLStream.prototype._read = function(sz) {
       }
     break
     
-    case FOOTER:
+    case STATE.FOOTER:
       if(this.textureURL) {
         this.push(" } appearance Appearance { texture ImageTexture { url \"")
         this.push(this.textureURL)
