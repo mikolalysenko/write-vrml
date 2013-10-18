@@ -117,7 +117,7 @@ VRMLStream.prototype._read = function(sz) {
       if(this.counter < this.fUVs.length) {
         var fuv = this.fUVs[this.counter++]
         for(var j=0, n=fuv.length; j<n; ++j) {
-          this.push(JOIN(fuv[j], " "))
+          this.push(JOIN.call(fuv[j], " "))
           this.push(", ")
         }
       } else {

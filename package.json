@@ -1,6 +1,6 @@
 {
   "name": "write-vrml",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Serializes a mesh to a VRML file",
   "main": "write-vrml.js",
   "directories": {
